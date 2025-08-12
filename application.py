@@ -10,7 +10,8 @@ my_patient.medicine.append(my_medicine2)
 
 def status(my_patient):
     print(f" Nombre: {my_patient.name}")
+    print(f"**** Tratamiento ****")
     for meds in my_patient.medicine:
-        print(f" Medicinas: {meds.name}")
+        print(f" {meds.name} \t {meds.brand}")
 
 status(my_patient)
